@@ -1,6 +1,6 @@
-# Tools — Copilot for Power BI (C734)
+# Tools — Microsoft Copilot for Power BI (C734)
 
-**Course Code:** C734  |  **Version v1.0 · 27 July 2026**
+**Course Code:** C734  |  **Version v2.0 · 4 October 2026**
 
 Everything in this course runs in **Power BI Desktop** (a free Windows app) and the
 **Power BI Service** (app.powerbi.com) on a Copilot-enabled Microsoft Fabric tenant.

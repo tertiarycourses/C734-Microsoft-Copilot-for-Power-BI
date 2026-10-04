@@ -1,7 +1,7 @@
 """
-SINGLE SOURCE OF TRUTH — C734 Copilot for Power BI (non-WSQ).
+SINGLE SOURCE OF TRUTH — C734 Microsoft Copilot for Power BI (non-WSQ).
 
-A beginner, one-day, hands-on short course on using Microsoft Copilot inside
+A beginner, two-day, hands-on short course on using Microsoft Copilot inside
 Power BI (Desktop and the Power BI Service on Microsoft Fabric) to build reports,
 visuals, DAX measures and natural-language analysis from plain-language prompts.
 Every artifact (PPT, LP, LG, LG.md) and every lab is generated from this module +
@@ -24,15 +24,15 @@ business data; a Contoso Coffee sample dataset is supplied for anyone who prefer
 """
 
 # ------------------------------------------------------------------ metadata
-TITLE        = "Copilot for Power BI (C734)"
-SHORT_TITLE  = "Copilot for Power BI (C734)"   # used in output filenames
+TITLE        = "Microsoft Copilot for Power BI (C734)"
+SHORT_TITLE  = "Microsoft Copilot for Power BI (C734)"   # used in output filenames
 COURSE_CODE  = "C734"                           # non-WSQ code — never a TGS- ref
-VERSION      = "v1.0"
-VERSION_DATE = "27 July 2026"
+VERSION      = "v2.0"
+VERSION_DATE = "4 October 2026"
 ORG          = "Tertiary Infotech Academy Pte Ltd"
 UEN          = "UEN: 201200696W"
 TRAINER      = "Dr. Alfred Ang"
-DAYS         = 1
+DAYS         = 2
 MODE         = "Instructor-led, hands-on practical labs"
 
 DARK_THEME = False
@@ -114,28 +114,41 @@ TOPICS = [
 
 # ------------------------------------------------------------------ day themes
 DAY_THEMES = {
-    1: "Enable Copilot and prepare data, build and refine reports with prompts, then add AI-assisted analysis and share",
+    1: "Enable Copilot and prepare data, then build report pages and visuals from prompts",
+    2: "Narrate and refine the report, add AI-assisted DAX and Q&A analysis, then summarise and share",
 }
 
 # ------------------------------------------------------------------ schedule
-# NON-WSQ: no assessment blocks. The single day totals exactly 480 training
-# minutes (excluding the 1-hour lunch; tea breaks are within training time).
+# NON-WSQ: no assessment blocks. Each day totals exactly 480 training minutes
+# (excluding the 1-hour lunch; tea breaks are within training time).
 def SCHEDULE(lab_titles):
     return {
      1: (DAY_THEMES[1], [
         ("9:30","9:50",20,"admin","Welcome, course introduction, ground rules and confirming access to Power BI Desktop and a Copilot-enabled Power BI Service tenant"),
-        ("9:50","10:35",45,"topic","TOPIC 01 — Get Started with Copilot in Power BI: what Copilot for Power BI and Microsoft Fabric are; licensing, requirements and enabling Copilot; Copilot in Power BI Desktop versus the Service; effective prompting; connecting and preparing data for Copilot (concepts + live demo)"),
-        ("10:35","11:15",40,"lab","Hands-on: "+lab_titles([1])),
-        ("11:15","11:30",15,"break","Tea break"),
-        ("11:30","13:00",90,"lab","Hands-on: "+lab_titles([2,3])),
+        ("9:50","10:50",60,"topic","TOPIC 01 — Get Started with Copilot in Power BI: what Copilot for Power BI and Microsoft Fabric are; licensing, requirements and enabling Copilot; Copilot in Power BI Desktop versus the Service; effective prompting; connecting and preparing data for Copilot (concepts + live demo)"),
+        ("10:50","11:35",45,"lab","Hands-on: "+lab_titles([1])),
+        ("11:35","11:50",15,"break","Tea break"),
+        ("11:50","13:00",70,"lab","Hands-on: "+lab_titles([2])),
         ("13:00","14:00",60,"lunch","Lunch break"),
-        ("14:00","14:40",40,"topic","TOPIC 02 — Create Reports and Visuals with Copilot: generating report pages from prompts; refining visuals and layouts with Copilot; narrative visuals and AI summaries; formatting and storytelling best practice (concepts + live demo)"),
-        ("14:40","15:45",65,"lab","Hands-on: "+lab_titles([4,5])),
+        ("14:00","15:00",60,"lab","Hands-on: "+lab_titles([3])),
+        ("15:00","15:45",45,"topic","TOPIC 02 — Create Reports and Visuals with Copilot: generating report pages from prompts; refining visuals and layouts with Copilot; narrative visuals and AI summaries; formatting and storytelling best practice (concepts + live demo)"),
         ("15:45","16:00",15,"break","Tea break"),
-        ("16:00","16:45",45,"lab","Hands-on: "+lab_titles([6])),
-        ("16:45","17:15",30,"topic","TOPIC 03 — AI-Assisted Data Modeling and Analysis: generating and explaining DAX measures with Copilot; setting up Q&A and natural-language queries; summarising insights and answering business questions; sharing AI-assisted reports and dashboards (concepts + live demo)"),
-        ("17:15","18:15",60,"lab","Hands-on: "+lab_titles([7,8,9])),
-        ("18:15","18:30",15,"recap","Course wrap-up, your Copilot-in-Power-BI checklist and next steps"),
+        ("16:00","17:15",75,"lab","Hands-on: "+lab_titles([4])),
+        ("17:15","18:15",60,"lab","Hands-on: "+lab_titles([5])),
+        ("18:15","18:30",15,"recap","Day 1 recap: your Copilot-ready model and first AI-generated report pages"),
+     ]),
+     2: (DAY_THEMES[2], [
+        ("9:30","9:45",15,"recap","Day 1 review, questions and checking every learner's Contoso Coffee report is ready to continue"),
+        ("9:45","11:00",75,"lab","Hands-on: "+lab_titles([6])),
+        ("11:00","11:15",15,"break","Tea break"),
+        ("11:15","12:00",45,"topic","TOPIC 03 — AI-Assisted Data Modeling and Analysis: generating and explaining DAX measures with Copilot; setting up Q&A and natural-language queries; summarising insights and answering business questions; sharing AI-assisted reports and dashboards (concepts + live demo)"),
+        ("12:00","13:00",60,"lab","Hands-on: "+lab_titles([7])),
+        ("13:00","14:00",60,"lunch","Lunch break"),
+        ("14:00","15:00",60,"lab","Hands-on: "+lab_titles([8])),
+        ("15:00","15:45",45,"lab","Hands-on: "+lab_titles([9])),
+        ("15:45","16:00",15,"break","Tea break"),
+        ("16:00","17:45",105,"lab","Guided practice: rebuild a report page, a Copilot-written DAX measure and the Q&A setup on your own business data (or a fresh copy of the Contoso Coffee sample), with trainer review"),
+        ("17:45","18:30",45,"recap","Course wrap-up, your Copilot-in-Power-BI checklist and next steps"),
      ]),
     }
 
@@ -181,7 +194,7 @@ COURSE_OVERVIEW = dict(
 
 # ------------------------------------------------------------------ LG content
 LG_INTRO = (
-    "This Learner Guide accompanies the Copilot for Power BI (C734) course, conducted by "
+    "This Learner Guide accompanies the Microsoft Copilot for Power BI (C734) course, conducted by "
     "Tertiary Infotech Academy Pte Ltd. It carries the full detail of all 9 hands-on labs, in the "
     "order you will run them, together with the concepts each lab depends on."
 )
@@ -196,7 +209,7 @@ LG_SETUP = dict(
     needs=[
         "A Windows laptop with Power BI Desktop installed (free from the Microsoft Store or powerbi.microsoft.com).",
         "A Power BI Service account (a work or school Microsoft 365 account) that can sign in to app.powerbi.com.",
-        "Copilot for Power BI enabled on the tenant: a paid Fabric capacity (F2 or above) or Power BI Premium, with the Copilot tenant switch turned on (the trainer confirms lab-tenant access at the start of the day).",
+        "Copilot for Power BI enabled on the tenant: a paid Fabric capacity (F2 or above) or Power BI Premium, with the Copilot tenant switch turned on (the trainer confirms lab-tenant access at the start of Day 1).",
         "The supplied Contoso Coffee sample dataset (an Excel workbook), or your own tabular business data in Excel or CSV.",
         "A current Chrome or Edge browser for the Power BI Service.",
     ],
@@ -215,7 +228,7 @@ LAB_NOTE = (
 )
 LG_WRAPUP = dict(
     title="Wrap-Up",
-    intro="You have built a complete AI-assisted Power BI report in a single day — from enabling Copilot and preparing data to generating pages, writing DAX, configuring Q&A and publishing a shared dashboard.",
+    intro="You have built a complete AI-assisted Power BI report over two days — from enabling Copilot and preparing data to generating pages, writing DAX, configuring Q&A and publishing a shared dashboard.",
     sections=[
         dict(title="What you built", bullets=[
             "A Copilot-enabled Power BI environment and a clean, well-named Contoso Coffee model.",
@@ -262,5 +275,6 @@ LG_GLOSSARY = [
 
 # ------------------------------------------------------------------ version history
 VERSION_HISTORY = [
-    ("1.0", VERSION_DATE, "Initial release — C734 Copilot for Power BI courseware.", TRAINER),
+    ("1.0", "27 July 2026", "Initial release — C734 Copilot for Power BI courseware.", TRAINER),
+    ("2.0", VERSION_DATE, "Retitled Microsoft Copilot for Power BI; extended from 1 day to 2 days with more hands-on lab and practice time.", TRAINER),
 ]

@@ -1,6 +1,6 @@
 # Lab 2 — Connect and Prepare Data So Copilot Can Understand It
 
-**Topic 01:** Get Started with Copilot in Power BI  |  **Day 1**  |  **Approx. 45 min**  |  **Course:** Copilot for Power BI (C734)
+**Topic 01:** Get Started with Copilot in Power BI  |  **Day 1**  |  **Approx. 70 min**  |  **Course:** Microsoft Copilot for Power BI (C734)
 
 ## Scenario
 
@@ -82,4 +82,4 @@ Save your output — it becomes part of your **Contoso Coffee report**, the sing
 
 ---
 
-*Copilot for Power BI (C734) · C734 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power BI (C734) · C734 · Version v2.0 · © 2026 Tertiary Infotech Academy Pte Ltd*

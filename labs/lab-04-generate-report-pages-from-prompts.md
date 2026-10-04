@@ -1,6 +1,6 @@
 # Lab 4 — Generate Report Pages from Prompts
 
-**Topic 02:** Create Reports and Visuals with Copilot  |  **Day 1**  |  **Approx. 32 min**  |  **Course:** Copilot for Power BI (C734)
+**Topic 02:** Create Reports and Visuals with Copilot  |  **Day 1**  |  **Approx. 75 min**  |  **Course:** Microsoft Copilot for Power BI (C734)
 
 ## Scenario
 
@@ -92,4 +92,4 @@ Save your output — it becomes part of your **Contoso Coffee report**, the sing
 
 ---
 
-*Copilot for Power BI (C734) · C734 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power BI (C734) · C734 · Version v2.0 · © 2026 Tertiary Infotech Academy Pte Ltd*

@@ -1,6 +1,6 @@
 # Lab 8 — Set Up Q&A and Natural-Language Queries
 
-**Topic 03:** AI-Assisted Data Modeling and Analysis  |  **Day 1**  |  **Approx. 20 min**  |  **Course:** Copilot for Power BI (C734)
+**Topic 03:** AI-Assisted Data Modeling and Analysis  |  **Day 2**  |  **Approx. 60 min**  |  **Course:** Microsoft Copilot for Power BI (C734)
 
 ## Scenario
 
@@ -108,4 +108,4 @@ Save your output — it becomes part of your **Contoso Coffee report**, the sing
 
 ---
 
-*Copilot for Power BI (C734) · C734 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power BI (C734) · C734 · Version v2.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
